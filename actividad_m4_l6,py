@@ -1,0 +1,69 @@
+# 1. Escribir en un archivo
+#• Crea un archivo llamado datos.txt desde Python (modo escritura).
+#• Escribe al menos 3 líneas de texto en él usando write().
+
+""" with open("datos.txt", "w",) as archivo:
+    archivo.write("Hola.\n")
+    archivo.write("Mundo.\n")
+    archivo.write("lindo dia.\n")
+
+print("Archivo 'datos.txt' creado con éxito.") """
+
+#2. Leer el archivo completo
+#• Abre el archivo datos.txt en modo lectura y muestra su contenido en pantalla usando read().
+
+""" with open("datos.txt", "r", ) as archivo:
+    contenido = archivo.read()
+    print(contenido) """
+    
+#Leer línea por línea
+# Usa readline() para leer e imprimir solo la primera línea del archivo.
+# Luego, usa un ciclo for para leer línea por línea el resto del archivo.
+
+
+""" with open("datos.txt", "r",) as archivo:
+    primera_linea = archivo.readline()
+    print(f"Primera línea : {primera_linea}")
+    
+    print("__________________________________" )
+    
+    print("Resto del archivo con ciclo for:")
+    for linea in archivo:
+        print(linea.strip())     """
+
+#4. Añadir contenido (modo append)
+#Vuelve a abrir el archivo en modo append y agrega una línea nueva.
+# Luego vuelve a abrirlo en modo lectura para comprobar que se agregó correctamente.
+
+""" with open("datos.txt", "a") as archivo:
+    archivo.write("nueva linea.\n")
+
+print("________________________" )
+
+with open("datos.txt", "r") as archivo:
+    contenido= archivo.read()
+    print("Contenido actualizado del archivo:")
+    print(contenido)
+ """
+#5. Atributos y cierre
+#• Muestra por pantalla el nombre del archivo (.name), si está cerrado (.closed) y el modo de apertura
+#(.mode).
+#• Asegúrate de cerrar el archivo correctamente con .close() o usando with.
+
+
+# 1. Abrimos el archivo manualmente
+archivo = open("datos.txt", "r", encoding="utf-8")
+
+# 2. Mostramos los atributos mientras está abierto
+print("--- Atributos con el archivo ABIERTO ---")
+print(f"Nombre:       {archivo.name}")
+print(f"Modo:         {archivo.mode}")
+print(f"¿Está cerrado?: {archivo.closed}")
+
+# 3. CERRAMOS el archivo manualmente (Paso crítico)
+archivo.close()
+
+# 4. Verificamos que se haya cerrado correctamente
+print("\n" + "-" * 40)
+print("--- Atributos después de ejecutar .close() ---")
+print(f"¿Está cerrado?: {archivo.closed}")
