@@ -51,19 +51,15 @@ with open("datos.txt", "r") as archivo:
 #• Asegúrate de cerrar el archivo correctamente con .close() o usando with.
 
 
-# 1. Abrimos el archivo manualmente
 archivo = open("datos.txt", "r", encoding="utf-8")
 
-# 2. Mostramos los atributos mientras está abierto
-print("--- Atributos con el archivo ABIERTO ---")
+print("Atributos con el archivo ABIERTO")
 print(f"Nombre:       {archivo.name}")
 print(f"Modo:         {archivo.mode}")
 print(f"¿Está cerrado?: {archivo.closed}")
 
-# 3. CERRAMOS el archivo manualmente (Paso crítico)
 archivo.close()
 
-# 4. Verificamos que se haya cerrado correctamente
-print("\n" + "-" * 40)
+
 print("--- Atributos después de ejecutar .close() ---")
 print(f"¿Está cerrado?: {archivo.closed}")
