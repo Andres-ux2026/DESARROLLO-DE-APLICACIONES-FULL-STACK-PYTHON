@@ -51,3 +51,12 @@
           Llave primaria: Es un campo (o conjunto de campos) que identifica de forma única e irrepetible a cada fila de una tabla. Por ejemplo, el número de cédula o un ID de producto. No puede haber valores nulos ni duplicados.
 
           Llave foránea:Es una columna que crea un vínculo entre dos tablas. Es la "llave primaria" de una tabla que aparece en otra para relacionarlas. Asegura la integridad referencial (no puedes tener un pedido de un cliente que no existe).
+
+4. Práctica guiada (si tienes PostgreSQL, SQLite o MySQL instalado)
+ (Opcional, solo si cuentas con un entorno configurado)
+ • Crea una base de datos vacía llamada empresa_demo.
+ • Muestra cómo se establece la conexión utilizando una herramienta como psql, DBeaver, MySQL
+ Workbench o SQLiteStudio.
+ • Documenta los pasos seguidos con comandos o capturas de pantalla.      
+
+![alt text](bd1.png) ![alt text](bd2.png) ![alt text](bd3.png) ![alt text](bd4.png) ![alt text](bd5.png) ![alt text](bd6.png)
