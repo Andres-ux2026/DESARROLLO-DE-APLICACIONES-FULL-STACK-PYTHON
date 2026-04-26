@@ -20,9 +20,8 @@ INSERT INTO clientes (nombre, ciudad) VALUES
 ('Diego Retamal', 'La Serena');
 
 INSERT INTO pedidos (cliente_id,total, fecha) VALUES
-(1, 25000, '2024-04-01'), -- Pedido de Bastián (Valparaíso)
-(1, 12000, '2024-04-15'), -- Otro pedido de Bastián
-(2, 45000, '2024-04-02'),
+(1, 25000, '2024-04-01'), 
+(1, 12000, '2024-04-15'), 
 (3, 18500, '2024-04-05'),
 (3, 9900,  '2024-04-20'),
 (4, 55000, '2024-04-10'),
