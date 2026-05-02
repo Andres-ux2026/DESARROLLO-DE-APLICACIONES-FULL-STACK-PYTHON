@@ -39,17 +39,17 @@
 
      Reducción de la redundancia: Se evita almacenar el mismo dato en múltiples lugares.
 
-     Integridad referencial: Asegura que las relaciones entre tablas sean consistentes (por ejemplo, que no exista una matrícula sin un estudiante válido).
+     Integridad referencial:  
 
-     Facilidad de mantenimiento: Si un dato cambia (como el nombre de un curso), solo se debe actualizar en un lugar.
+     Facilidad de mantenimiento: 
 
-     Ahorro de espacio: Al eliminar datos duplicados, el tamaño físico de la base de datos es menor.
+     Ahorro de espacio: A
 
 ¿Cuándo conviene desnormalizarla?
-  Aunque la normalización es la regla de oro, la desnormalización es una técnica avanzada que se aplica principalmente por razones de rendimiento:
+  La desnormalización es una técnica avanzada que se aplica principalmente por razones de rendimiento:
 
- Optimización de lectura: En sistemas con volúmenes masivos de datos (como Big Data o Data Warehousing), donde las uniones (joins) entre muchas tablas son demasiado lentas.
+ Optimización de lectura: 
 
- Reportabilidad: Cuando se necesitan generar reportes complejos de forma frecuente y se prefiere tener los datos "pre-calculados" o repetidos para evitar procesamientos costosos.
+ Reportabilidad: 
 
- Sistemas OLAP: En bases de datos destinadas al análisis y no a la transacción diaria, donde la velocidad de consulta es más importante que el ahorro de espacio.
+ 
